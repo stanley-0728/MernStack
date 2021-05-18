@@ -1,0 +1,29 @@
+{
+  "name": "Intern",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "server": "nodemon server/server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "is-empty": "^1.2.0",
+    "is-length": "^1.0.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongose": "0.0.2-security",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.7",
+    "validator": "^13.6.0"
+  }
+}
